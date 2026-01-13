@@ -44,9 +44,9 @@ export function getAudioPaths(word: string): {
     .replace(/[^a-z0-9_]/g, '');
   
   return {
-    wholeWord: `/audio/${sanitized}_1_whole_word.wav`,
-    definition: `/audio/${sanitized}_2_definition.wav`,
-    spelling: `/audio/${sanitized}_3_each_chars.wav`,
+    wholeWord: `/audio/${sanitized}_1_whole_word.mp3`,
+    definition: `/audio/${sanitized}_2_definition.mp3`,
+    spelling: `/audio/${sanitized}_3_each_chars.mp3`,
   };
 }
 // Check if audio file exists

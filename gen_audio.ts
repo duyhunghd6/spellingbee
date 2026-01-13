@@ -24,7 +24,7 @@ const CONFIG = {
   // ttsHost: '10.0.1.42',
   ttsHost: '127.0.0.1',
   ttsPort: 5345,
-  ttsPath: '/v1beta/models/gemini-2.5-flash-preview-tts:streamGenerateContent?alt=sse',
+  ttsPath: '/v1beta/models/gemini-2.5-pro-preview-tts:streamGenerateContent?alt=sse',
   apiKey: 'aistudio-proxy-key-2024',
   voiceName: 'Charon', // Informative voice for educational content
   audioDir: './audio',
@@ -226,40 +226,37 @@ ${word} is spelled: ${letterSequence}`;
 }
 
 /**
- * Convert raw PCM audio data to WAV format
+ * Convert raw PCM audio data to MP3 format using ffmpeg
  */
-function pcmToWav(pcmBuffer: Buffer, sampleRate: number = 24000, numChannels: number = 1, bitsPerSample: number = 16): Buffer {
-  const byteRate = sampleRate * numChannels * (bitsPerSample / 8);
-  const blockAlign = numChannels * (bitsPerSample / 8);
-  const dataSize = pcmBuffer.length;
-  const headerSize = 44;
-  const fileSize = headerSize + dataSize - 8;
-
-  const wavBuffer = Buffer.alloc(headerSize + dataSize);
-
-  // RIFF header
-  wavBuffer.write('RIFF', 0);
-  wavBuffer.writeUInt32LE(fileSize, 4);
-  wavBuffer.write('WAVE', 8);
-
-  // fmt subchunk
-  wavBuffer.write('fmt ', 12);
-  wavBuffer.writeUInt32LE(16, 16); // Subchunk1Size (16 for PCM)
-  wavBuffer.writeUInt16LE(1, 20);  // AudioFormat (1 = PCM)
-  wavBuffer.writeUInt16LE(numChannels, 22);
-  wavBuffer.writeUInt32LE(sampleRate, 24);
-  wavBuffer.writeUInt32LE(byteRate, 28);
-  wavBuffer.writeUInt16LE(blockAlign, 32);
-  wavBuffer.writeUInt16LE(bitsPerSample, 34);
-
-  // data subchunk
-  wavBuffer.write('data', 36);
-  wavBuffer.writeUInt32LE(dataSize, 40);
-
-  // Copy PCM data
-  pcmBuffer.copy(wavBuffer, 44);
-
-  return wavBuffer;
+function pcmToMp3(pcmBuffer: Buffer, sampleRate: number = 24000, numChannels: number = 1): Buffer {
+  // Write PCM data to a temporary file
+  const tempPcmFile = `/tmp/temp_${Date.now()}.pcm`;
+  const tempMp3File = `/tmp/temp_${Date.now()}.mp3`;
+  
+  try {
+    fs.writeFileSync(tempPcmFile, pcmBuffer);
+    
+    // Use ffmpeg to convert PCM to MP3
+    execSync(
+      `ffmpeg -f s16le -ar ${sampleRate} -ac ${numChannels} -i "${tempPcmFile}" ` +
+      `-codec:a libmp3lame -qscale:a 2 "${tempMp3File}" -y`,
+      { stdio: 'pipe' } // Suppress ffmpeg output
+    );
+    
+    // Read the MP3 file
+    const mp3Buffer = fs.readFileSync(tempMp3File);
+    
+    // Clean up temporary files
+    fs.unlinkSync(tempPcmFile);
+    fs.unlinkSync(tempMp3File);
+    
+    return mp3Buffer;
+  } catch (error) {
+    // Cleanup on error
+    if (fs.existsSync(tempPcmFile)) fs.unlinkSync(tempPcmFile);
+    if (fs.existsSync(tempMp3File)) fs.unlinkSync(tempMp3File);
+    throw error;
+  }
 }
 
 /**
@@ -395,17 +392,17 @@ async function generateAudioForWord(entry: WordEntry): Promise<{ success: boolea
 
   const audioFiles = [
     {
-      name: `${sanitizedWord}_1_whole_word.wav`,
+      name: `${sanitizedWord}_1_whole_word.mp3`,
       prompt: generateWholeWordPrompt(entry.word),
       type: 'whole word',
     },
     {
-      name: `${sanitizedWord}_2_definition.wav`,
+      name: `${sanitizedWord}_2_definition.mp3`,
       prompt: generateDefinitionPrompt(entry.definition),
       type: 'definition',
     },
     {
-      name: `${sanitizedWord}_3_each_chars.wav`,
+      name: `${sanitizedWord}_3_each_chars.mp3`,
       prompt: generateSpellingPrompt(entry.word),
       type: 'spelling',
     },

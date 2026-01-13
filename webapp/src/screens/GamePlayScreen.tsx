@@ -67,7 +67,7 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
       const wordsWithAudio: Word[] = [];
       
       for (const word of words) {
-        const paths = { wholeWord: `/audio/${word.word.toLowerCase().replace(/\s+/g, '_').replace(/\./g, '').replace(/-/g, '_').replace(/[^a-z0-9_]/g, '')}_1_whole_word.wav` };
+        const paths = { wholeWord: `/audio/${word.word.toLowerCase().replace(/\s+/g, '_').replace(/\./g, '').replace(/-/g, '_').replace(/[^a-z0-9_]/g, '')}_1_whole_word.mp3` };
         try {
           const response = await fetch(paths.wholeWord, { method: 'HEAD' });
           if (response.ok) {
@@ -86,7 +86,7 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
   }, [words]);
   
   const currentWord = filteredWords[currentIndex];
-  const displayLength = difficulty === 'easy' ? currentWord.word.length : maxWordLength;
+  const displayLength = difficulty === 'easy' ? (currentWord?.word.length || 0) : maxWordLength;
 
   // Initialize answer array when word changes
   useEffect(() => {
