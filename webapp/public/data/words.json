@@ -1,0 +1,1570 @@
+[
+  {
+    "no": 1,
+    "word": "cousin",
+    "ipa": "/ˈkʌz.ɪn/",
+    "meaning": "anh/chị em họ",
+    "unit": 1,
+    "definition": "A child of your aunt or uncle who is part of your extended family."
+  },
+  {
+    "no": 2,
+    "word": "brother",
+    "ipa": "/ˈbrʌð.ər/",
+    "meaning": "anh/em trai",
+    "unit": 1,
+    "definition": "A male sibling who shares the same parents as you."
+  },
+  {
+    "no": 3,
+    "word": "mum",
+    "ipa": "/mʌm/",
+    "meaning": "mẹ",
+    "unit": 1,
+    "definition": "An informal word for your mother or female parent."
+  },
+  {
+    "no": 4,
+    "word": "granddaughter",
+    "ipa": "/ˈɡrænˌdɔː.tər/",
+    "meaning": "cháu gái",
+    "unit": 1,
+    "definition": "A female child of your son or daughter."
+  },
+  {
+    "no": 5,
+    "word": "aunt",
+    "ipa": "/ɑːnt/",
+    "meaning": "cô / dì / thím",
+    "unit": 1,
+    "definition": "The sister of your mother or father or the wife of your uncle."
+  },
+  {
+    "no": 6,
+    "word": "sister",
+    "ipa": "/ˈsɪs.tər/",
+    "meaning": "chị/em gái",
+    "unit": 1,
+    "definition": "A female sibling who shares the same parents as you."
+  },
+  {
+    "no": 7,
+    "word": "dad",
+    "ipa": "/dæd/",
+    "meaning": "bố",
+    "unit": 1,
+    "definition": "An informal word for your father or male parent."
+  },
+  {
+    "no": 8,
+    "word": "grandson",
+    "ipa": "/ˈɡræn.sʌn/",
+    "meaning": "cháu trai",
+    "unit": 1,
+    "definition": "A male child of your son or daughter."
+  },
+  {
+    "no": 9,
+    "word": "grandpa",
+    "ipa": "/ˈɡræn.pɑː/",
+    "meaning": "ông",
+    "unit": 1,
+    "definition": "An informal word for your grandfather or male grandparent."
+  },
+  {
+    "no": 10,
+    "word": "daughter",
+    "ipa": "/ˈdɔː.tər/",
+    "meaning": "con gái",
+    "unit": 1,
+    "definition": "A female child in relation to her parents."
+  },
+  {
+    "no": 11,
+    "word": "uncle",
+    "ipa": "/ˈʌŋ.kəl/",
+    "meaning": "chú / bác / cậu",
+    "unit": 1,
+    "definition": "The male sibling of your mother or father or the husband of your aunt."
+  },
+  {
+    "no": 12,
+    "word": "grandma",
+    "ipa": "/ˈɡræn.mɑː/",
+    "meaning": "bà",
+    "unit": 1,
+    "definition": "An informal word for your grandmother or female grandparent."
+  },
+  {
+    "no": 13,
+    "word": "long jump",
+    "ipa": "/ˌlɒŋ ˈdʒʌmp/",
+    "meaning": "nhảy xa",
+    "unit": 1,
+    "definition": "An athletic event where you leap as far as possible from a starting point."
+  },
+  {
+    "no": 14,
+    "word": "football",
+    "ipa": "/ˈfʊt.bɔːl/",
+    "meaning": "bóng đá",
+    "unit": 1,
+    "definition": "A team sport played by kicking a round ball into the opponent's goal."
+  },
+  {
+    "no": 15,
+    "word": "skateboarding",
+    "ipa": "/ˈskeɪtˌbɔː.dɪŋ/",
+    "meaning": "trượt ván",
+    "unit": 1,
+    "definition": "The activity of riding on a board with wheels and doing tricks."
+  },
+  {
+    "no": 16,
+    "word": "advertising events",
+    "ipa": "/ˈæd.və.taɪ.zɪŋ ɪˈvents/",
+    "meaning": "quảng bá sự kiện",
+    "unit": 1,
+    "definition": "Activities that promote or publicize special occasions to attract people."
+  },
+  {
+    "no": 17,
+    "word": "leaflet",
+    "ipa": "/ˈliː.flət/",
+    "meaning": "tờ rơi",
+    "unit": 1,
+    "definition": "A printed sheet of paper containing information or advertisements."
+  },
+  {
+    "no": 18,
+    "word": "event",
+    "ipa": "/ɪˈvent/",
+    "meaning": "sự kiện",
+    "unit": 1,
+    "definition": "A planned occasion or activity that takes place at a specific time."
+  },
+  {
+    "no": 19,
+    "word": "raising money",
+    "ipa": "/ˈreɪ.zɪŋ ˈmʌn.i/",
+    "meaning": "gây quỹ / quyên tiền",
+    "unit": 1,
+    "definition": "The activity of collecting funds for a cause or organization."
+  },
+  {
+    "no": 20,
+    "word": "craft activity",
+    "ipa": "/krɑːft ækˈtɪv.ɪ.ti/",
+    "meaning": "hoạt động thủ công",
+    "unit": 1,
+    "definition": "Making things by hand using materials like paper scissors and glue."
+  },
+  {
+    "no": 21,
+    "word": "rugby",
+    "ipa": "/ˈrʌɡ.bi/",
+    "meaning": "bóng bầu dục",
+    "unit": 1,
+    "definition": "A team sport where players carry an oval ball and try to score tries."
+  },
+  {
+    "no": 22,
+    "word": "basketball",
+    "ipa": "/ˈbɑː.skɪt.bɔːl/",
+    "meaning": "bóng rổ",
+    "unit": 1,
+    "definition": "A team sport where players throw a ball through a high hoop to score."
+  },
+  {
+    "no": 23,
+    "word": "snowboarding",
+    "ipa": "/ˈsnəʊ.bɔː.dɪŋ/",
+    "meaning": "trượt tuyết",
+    "unit": 1,
+    "definition": "A winter sport of sliding down slopes on a single board attached to your feet."
+  },
+  {
+    "no": 24,
+    "word": "karate",
+    "ipa": "/kəˈrɑː.ti/",
+    "meaning": "võ ka-ra-te",
+    "unit": 1,
+    "definition": "A Japanese martial art using punches kicks and defensive blocks."
+  },
+  {
+    "no": 25,
+    "word": "running",
+    "ipa": "/ˈrʌn.ɪŋ/",
+    "meaning": "chạy",
+    "unit": 1,
+    "definition": "Moving quickly on foot faster than walking as exercise or sport."
+  },
+  {
+    "no": 26,
+    "word": "surfing",
+    "ipa": "/ˈsɜː.fɪŋ/",
+    "meaning": "lướt sóng",
+    "unit": 1,
+    "definition": "The water sport of riding waves on a board in the ocean."
+  },
+  {
+    "no": 27,
+    "word": "neighbourhood",
+    "ipa": "/ˈneɪ.bə.hʊd/",
+    "meaning": "khu phố",
+    "unit": 1,
+    "definition": "The area around where you live including nearby streets and houses."
+  },
+  {
+    "no": 28,
+    "word": "block",
+    "ipa": "/blɒk/",
+    "meaning": "khu nhà / dãy nhà",
+    "unit": 1,
+    "definition": "A group of buildings surrounded by streets on all sides."
+  },
+  {
+    "no": 29,
+    "word": "sports club",
+    "ipa": "/ˈspɔːts klʌb/",
+    "meaning": "câu lạc bộ thể thao",
+    "unit": 1,
+    "definition": "An organization where people meet to play games and exercise together."
+  },
+  {
+    "no": 30,
+    "word": "country",
+    "ipa": "/ˈkʌn.tri/",
+    "meaning": "đất nước",
+    "unit": 1,
+    "definition": "A nation with its own government borders and people."
+  },
+  {
+    "no": 31,
+    "word": "continent",
+    "ipa": "/ˈkɒn.tɪ.nənt/",
+    "meaning": "châu lục",
+    "unit": 1,
+    "definition": "One of the seven large landmasses on Earth like Asia or Africa."
+  },
+  {
+    "no": 32,
+    "word": "cook",
+    "ipa": "/kʊk/",
+    "meaning": "đầu bếp",
+    "unit": 1,
+    "definition": "A person whose job is to prepare and make food."
+  },
+  {
+    "no": 33,
+    "word": "headteacher",
+    "ipa": "/ˌhedˈtiː.tʃər/",
+    "meaning": "hiệu trưởng",
+    "unit": 1,
+    "definition": "The person in charge of a school who leads all staff and students."
+  },
+  {
+    "no": 34,
+    "word": "class teacher",
+    "ipa": "/ˈklɑːs ˌtiː.tʃər/",
+    "meaning": "giáo viên của lớp",
+    "unit": 1,
+    "definition": "The main educator responsible for teaching a specific group of students."
+  },
+  {
+    "no": 35,
+    "word": "caretaker",
+    "ipa": "/ˈkeə.teɪ.kər/",
+    "meaning": "nhân viên quản lý cơ sở vật chất",
+    "unit": 1,
+    "definition": "A person who looks after a building and does repairs."
+  },
+  {
+    "no": 36,
+    "word": "school nurse",
+    "ipa": "/skuːl nɜːs/",
+    "meaning": "y tá trường học",
+    "unit": 1,
+    "definition": "A medical professional who takes care of sick or injured students."
+  },
+  {
+    "no": 37,
+    "word": "P.E. teacher",
+    "ipa": "/piːˈiː ˌtiː.tʃər/",
+    "meaning": "giáo viên thể dục",
+    "unit": 1,
+    "definition": "An educator who teaches physical exercise and games to students."
+  },
+  {
+    "no": 38,
+    "word": "librarian",
+    "ipa": "/ˈlaɪ.brə.ri/",
+    "meaning": "nhân viên thư viện",
+    "unit": 1,
+    "definition": "A person who works in a place where books are kept and borrowed."
+  },
+  {
+    "no": 39,
+    "word": "surgery",
+    "ipa": "/ˈsɜː.dʒər.i/",
+    "meaning": "phẫu thuật",
+    "unit": 1,
+    "definition": "A medical operation where doctors cut into the body to fix problems."
+  },
+  {
+    "no": 40,
+    "word": "hidden",
+    "ipa": "/ˈhɪd.ən/",
+    "meaning": "ẩn giấu",
+    "unit": 1,
+    "definition": "Something that is kept out of sight or not easily found."
+  },
+  {
+    "no": 1,
+    "word": "Venus",
+    "ipa": "/ˈviː.nəs/",
+    "meaning": "sao Kim",
+    "unit": 2,
+    "definition": "The second planet from the Sun known as Earth's sister planet."
+  },
+  {
+    "no": 2,
+    "word": "Jupiter",
+    "ipa": "/ˈdʒuː.pɪ.tər/",
+    "meaning": "sao Mộc",
+    "unit": 2,
+    "definition": "The largest planet in our solar system with many moons."
+  },
+  {
+    "no": 3,
+    "word": "Mercury",
+    "ipa": "/ˈmɜː.kjʊə.ri/",
+    "meaning": "sao Thủy",
+    "unit": 2,
+    "definition": "The smallest planet and closest to the Sun in our solar system."
+  },
+  {
+    "no": 4,
+    "word": "Mars",
+    "ipa": "/mɑːz/",
+    "meaning": "sao Hoả",
+    "unit": 2,
+    "definition": "The fourth planet from the Sun known as the Red Planet."
+  },
+  {
+    "no": 5,
+    "word": "Saturn",
+    "ipa": "/ˈsæt.ɜːn/",
+    "meaning": "sao Thổ",
+    "unit": 2,
+    "definition": "A large planet famous for its beautiful rings made of ice and rock."
+  },
+  {
+    "no": 6,
+    "word": "Uranus",
+    "ipa": "/ˈjʊə.rə.nəs/",
+    "meaning": "sao Thiên Vương",
+    "unit": 2,
+    "definition": "The seventh planet from the Sun that rotates on its side."
+  },
+  {
+    "no": 7,
+    "word": "Neptune",
+    "ipa": "/ˈnep.tjuːn/",
+    "meaning": "sao Hải Vương",
+    "unit": 2,
+    "definition": "The eighth and farthest planet from the Sun in our solar system."
+  },
+  {
+    "no": 8,
+    "word": "Earth",
+    "ipa": "/ɜːθ/",
+    "meaning": "Trái đất",
+    "unit": 2,
+    "definition": "The third planet from the Sun where all humans live."
+  },
+  {
+    "no": 9,
+    "word": "solar system",
+    "ipa": "/ˈsəʊ.lə ˌsɪs.təm/",
+    "meaning": "hệ mặt trời",
+    "unit": 2,
+    "definition": "The Sun and all the planets moons and objects that orbit around it."
+  },
+  {
+    "no": 10,
+    "word": "planet",
+    "ipa": "/ˈplæn.ɪt/",
+    "meaning": "hành tinh",
+    "unit": 2,
+    "definition": "A large round object in space that moves around a star."
+  },
+  {
+    "no": 11,
+    "word": "explore",
+    "ipa": "/ɪkˈsplɔːr/",
+    "meaning": "khám phá",
+    "unit": 2,
+    "definition": "To travel to new places to discover and learn about them."
+  },
+  {
+    "no": 12,
+    "word": "orbit",
+    "ipa": "/ˈɔː.bɪt/",
+    "meaning": "quỹ đạo",
+    "unit": 2,
+    "definition": "The curved path that a planet or moon follows around a star."
+  },
+  {
+    "no": 13,
+    "word": "support",
+    "ipa": "/səˈpɔːt/",
+    "meaning": "ủng hộ",
+    "unit": 2,
+    "definition": "To help or encourage someone or something."
+  },
+  {
+    "no": 14,
+    "word": "discover",
+    "ipa": "/dɪˈskʌv.ər/",
+    "meaning": "phát hiện",
+    "unit": 2,
+    "definition": "To find or learn something for the first time."
+  },
+  {
+    "no": 15,
+    "word": "poisonous",
+    "ipa": "/ˈpɔɪ.zən.əs/",
+    "meaning": "có độc",
+    "unit": 2,
+    "definition": "Containing substances that can harm or kill living things."
+  },
+  {
+    "no": 16,
+    "word": "humid",
+    "ipa": "/ˈhjuː.mɪd/",
+    "meaning": "ẩm ướt",
+    "unit": 2,
+    "definition": "When the air contains a lot of moisture and feels wet."
+  },
+  {
+    "no": 17,
+    "word": "sunset",
+    "ipa": "/ˈsʌn.set/",
+    "meaning": "hoàng hôn",
+    "unit": 2,
+    "definition": "The time in the evening when the Sun goes down below the horizon."
+  },
+  {
+    "no": 18,
+    "word": "lightning",
+    "ipa": "/ˈlaɪt.nɪŋ/",
+    "meaning": "tia sét",
+    "unit": 2,
+    "definition": "A bright flash of electricity in the sky during a storm."
+  },
+  {
+    "no": 19,
+    "word": "northern lights",
+    "ipa": "/ˌnɔː.ðən ˈlaɪts/",
+    "meaning": "cực quang",
+    "unit": 2,
+    "definition": "Colorful dancing lights in the night sky seen in Arctic regions."
+  },
+  {
+    "no": 20,
+    "word": "constellation",
+    "ipa": "/ˌkɒn.stəˈleɪ.ʃən/",
+    "meaning": "chòm sao",
+    "unit": 2,
+    "definition": "A group of stars that form a pattern or picture in the sky."
+  },
+  {
+    "no": 21,
+    "word": "tropical",
+    "ipa": "/ˈtrɒp.ɪ.kəl/",
+    "meaning": "nhiệt đới",
+    "unit": 2,
+    "definition": "Related to the hot and wet areas near the equator."
+  },
+  {
+    "no": 22,
+    "word": "island",
+    "ipa": "/ˈaɪ.lənd/",
+    "meaning": "hòn đảo",
+    "unit": 2,
+    "definition": "A piece of land completely surrounded by water."
+  },
+  {
+    "no": 23,
+    "word": "beach",
+    "ipa": "/biːtʃ/",
+    "meaning": "bãi biển",
+    "unit": 2,
+    "definition": "An area of sand or small stones next to the sea."
+  },
+  {
+    "no": 24,
+    "word": "rainbow",
+    "ipa": "/ˈreɪn.bəʊ/",
+    "meaning": "cầu vồng",
+    "unit": 2,
+    "definition": "A curved band of colors in the sky that appears after rain."
+  },
+  {
+    "no": 25,
+    "word": "volcano",
+    "ipa": "/vɒlˈkeɪ.nəʊ/",
+    "meaning": "núi lửa",
+    "unit": 2,
+    "definition": "A mountain that can erupt and release hot lava and ash."
+  },
+  {
+    "no": 26,
+    "word": "the arctic",
+    "ipa": "/ðiː ˈɑːk.tɪk/",
+    "meaning": "Bắc Cực",
+    "unit": 2,
+    "definition": "The frozen region around the North Pole with ice and polar bears."
+  },
+  {
+    "no": 27,
+    "word": "desert",
+    "ipa": "/ˈdez.ət/",
+    "meaning": "sa mạc",
+    "unit": 2,
+    "definition": "A very dry area of land with little rain or plants."
+  },
+  {
+    "no": 28,
+    "word": "rainforest",
+    "ipa": "/ˈreɪnˌfɒr.ɪst/",
+    "meaning": "rừng nhiệt đới",
+    "unit": 2,
+    "definition": "A thick forest in hot areas that receives a lot of rainfall."
+  },
+  {
+    "no": 29,
+    "word": "river",
+    "ipa": "/ˈrɪv.ər/",
+    "meaning": "dòng sông",
+    "unit": 2,
+    "definition": "A long natural flow of water that moves across the land."
+  },
+  {
+    "no": 30,
+    "word": "freezing",
+    "ipa": "/ˈfriː.zɪŋ/",
+    "meaning": "đóng băng",
+    "unit": 2,
+    "definition": "Extremely cold temperature at which water turns to ice."
+  },
+  {
+    "no": 31,
+    "word": "icy",
+    "ipa": "/ˈaɪ.si/",
+    "meaning": "băng giá",
+    "unit": 2,
+    "definition": "Covered with or made of frozen water."
+  },
+  {
+    "no": 32,
+    "word": "dry",
+    "ipa": "/draɪ/",
+    "meaning": "khô",
+    "unit": 2,
+    "definition": "Without water or moisture."
+  },
+  {
+    "no": 33,
+    "word": "huge",
+    "ipa": "/hjuːdʒ/",
+    "meaning": "to lớn",
+    "unit": 2,
+    "definition": "Extremely large in size or amount."
+  },
+  {
+    "no": 34,
+    "word": "wide",
+    "ipa": "/waɪd/",
+    "meaning": "rộng",
+    "unit": 2,
+    "definition": "Having a large distance from one side to the other."
+  },
+  {
+    "no": 35,
+    "word": "warm",
+    "ipa": "/wɔːm/",
+    "meaning": "ấm",
+    "unit": 2,
+    "definition": "Having a comfortable temperature that is not too hot or cold."
+  },
+  {
+    "no": 36,
+    "word": "cool",
+    "ipa": "/kuːl/",
+    "meaning": "mát",
+    "unit": 2,
+    "definition": "Slightly cold in a pleasant and refreshing way."
+  },
+  {
+    "no": 37,
+    "word": "satellite",
+    "ipa": "/ˈsæt.əl.aɪt/",
+    "meaning": "vệ tinh",
+    "unit": 2,
+    "definition": "An object that moves around a planet or a device sent into space."
+  },
+  {
+    "no": 38,
+    "word": "rover",
+    "ipa": "/ˈrəʊ.vər/",
+    "meaning": "xe tự điều khiển",
+    "unit": 2,
+    "definition": "A vehicle that explores the surface of other planets."
+  },
+  {
+    "no": 39,
+    "word": "space shuttle",
+    "ipa": "/ˈspeɪs ˌʃʌt.əl/",
+    "meaning": "tàu vũ trụ",
+    "unit": 2,
+    "definition": "A spacecraft designed to carry astronauts into orbit and back."
+  },
+  {
+    "no": 40,
+    "word": "telescope",
+    "ipa": "/ˈtel.ɪ.skəʊp/",
+    "meaning": "kính thiên văn",
+    "unit": 2,
+    "definition": "An instrument with lenses used to see distant objects in the sky."
+  },
+  {
+    "no": 1,
+    "word": "detached house",
+    "ipa": "/dɪˌtætʃt ˈhaʊs/",
+    "meaning": "nhà biệt lập",
+    "unit": 3,
+    "definition": "A home that stands alone and is not connected to other buildings."
+  },
+  {
+    "no": 2,
+    "word": "apartment",
+    "ipa": "/əˈpɑːt.mənt/",
+    "meaning": "căn hộ",
+    "unit": 3,
+    "definition": "A living space that is part of a larger building with other units."
+  },
+  {
+    "no": 3,
+    "word": "yurt",
+    "ipa": "/jɜːt/",
+    "meaning": "lều tròn",
+    "unit": 3,
+    "definition": "A round tent used by people in Central Asia made of felt."
+  },
+  {
+    "no": 4,
+    "word": "eco-house",
+    "ipa": "/ˈiː.kəʊ ˌhaʊs/",
+    "meaning": "nhà thân thiện với môi trường",
+    "unit": 3,
+    "definition": "A home designed to be friendly to nature and save energy."
+  },
+  {
+    "no": 5,
+    "word": "stilt house",
+    "ipa": "/stɪlt haʊs/",
+    "meaning": "nhà sàn",
+    "unit": 3,
+    "definition": "A home built on poles above the ground or water."
+  },
+  {
+    "no": 6,
+    "word": "bungalow",
+    "ipa": "/ˈbʌŋ.ɡə.ləʊ/",
+    "meaning": "nhà một tầng",
+    "unit": 3,
+    "definition": "A small home with only one level and no stairs."
+  },
+  {
+    "no": 7,
+    "word": "houseboat",
+    "ipa": "/ˈhaʊs.bəʊt/",
+    "meaning": "nhà thuyền",
+    "unit": 3,
+    "definition": "A boat that is designed for people to live in on the water."
+  },
+  {
+    "no": 8,
+    "word": "enormous",
+    "ipa": "/ɪˈnɔː.məs/",
+    "meaning": "to lớn",
+    "unit": 3,
+    "definition": "Very very big in size."
+  },
+  {
+    "no": 9,
+    "word": "balcony",
+    "ipa": "/ˈbæl.kə.ni/",
+    "meaning": "ban công",
+    "unit": 3,
+    "definition": "A platform outside an upper floor with a railing around it."
+  },
+  {
+    "no": 10,
+    "word": "floor",
+    "ipa": "/flɔːr/",
+    "meaning": "sàn nhà / tầng",
+    "unit": 3,
+    "definition": "The surface you walk on inside a building or a level of a building."
+  },
+  {
+    "no": 11,
+    "word": "roof",
+    "ipa": "/ruːf/",
+    "meaning": "mái nhà",
+    "unit": 3,
+    "definition": "The top covering of a building that protects it from weather."
+  },
+  {
+    "no": 12,
+    "word": "bricks",
+    "ipa": "/brɪks/",
+    "meaning": "gạch",
+    "unit": 3,
+    "definition": "Rectangular blocks made of clay used to build walls."
+  },
+  {
+    "no": 13,
+    "word": "wood",
+    "ipa": "/wʊd/",
+    "meaning": "gỗ",
+    "unit": 3,
+    "definition": "The hard material from trees used for building and making things."
+  },
+  {
+    "no": 14,
+    "word": "chimney",
+    "ipa": "/ˈtʃɪm.ni/",
+    "meaning": "ống khói",
+    "unit": 3,
+    "definition": "A tall pipe that takes smoke from a fire out through the roof."
+  },
+  {
+    "no": 15,
+    "word": "ecological",
+    "ipa": "/ˌiː.kəˈlɒdʒ.ɪ.kəl/",
+    "meaning": "sinh thái",
+    "unit": 3,
+    "definition": "Related to the relationship between living things and their environment."
+  },
+  {
+    "no": 16,
+    "word": "impact on",
+    "ipa": "/ˈɪm.pækt ɒn/",
+    "meaning": "tác động đến",
+    "unit": 3,
+    "definition": "The effect or influence that something has on another thing."
+  },
+  {
+    "no": 17,
+    "word": "solar panels",
+    "ipa": "/ˈsəʊ.lə ˌpæn.əlz/",
+    "meaning": "tấm pin mặt trời",
+    "unit": 3,
+    "definition": "Devices that convert sunlight into electricity for homes."
+  },
+  {
+    "no": 18,
+    "word": "eco efficient",
+    "ipa": "/ˈiː.kəʊ ɪˈfɪʃ.ənt/",
+    "meaning": "hiệu quả sinh thái",
+    "unit": 3,
+    "definition": "Using less energy and resources while being kind to nature."
+  },
+  {
+    "no": 19,
+    "word": "appliances",
+    "ipa": "/əˈplaɪ.ənsɪz/",
+    "meaning": "thiết bị",
+    "unit": 3,
+    "definition": "Electrical machines used in homes like refrigerators and washing machines."
+  },
+  {
+    "no": 20,
+    "word": "mountain",
+    "ipa": "/ˈmaʊn.tɪn/",
+    "meaning": "núi",
+    "unit": 3,
+    "definition": "A very high natural landform that rises above the surrounding area."
+  },
+  {
+    "no": 21,
+    "word": "peak",
+    "ipa": "/piːk/",
+    "meaning": "đỉnh",
+    "unit": 3,
+    "definition": "The pointed top of a high landform or the highest point."
+  },
+  {
+    "no": 22,
+    "word": "hidden",
+    "ipa": "/ˈhɪd.ən/",
+    "meaning": "ẩn giấu",
+    "unit": 3,
+    "definition": "Something that is kept out of sight or not easily found."
+  },
+  {
+    "no": 23,
+    "word": "trek",
+    "ipa": "/trek/",
+    "meaning": "chuyến đi bộ",
+    "unit": 3,
+    "definition": "A long and difficult journey usually made on foot."
+  },
+  {
+    "no": 24,
+    "word": "water tank",
+    "ipa": "/ˈwɔː.tə tæŋk/",
+    "meaning": "bể chứa nước",
+    "unit": 3,
+    "definition": "A large container used to store liquid for later use."
+  },
+  {
+    "no": 25,
+    "word": "recycle",
+    "ipa": "/ˌriːˈsaɪ.kəl/",
+    "meaning": "tái chế",
+    "unit": 3,
+    "definition": "To process used materials so they can be used again."
+  },
+  {
+    "no": 26,
+    "word": "rubbish tip",
+    "ipa": "/ˈrʌb.ɪʃ tɪp/",
+    "meaning": "bãi rác",
+    "unit": 3,
+    "definition": "A place where waste and garbage are taken and left."
+  },
+  {
+    "no": 27,
+    "word": "mysterious",
+    "ipa": "/mɪˈstɪə.ri.əs/",
+    "meaning": "bí ẩn",
+    "unit": 3,
+    "definition": "Strange and difficult to understand or explain."
+  },
+  {
+    "no": 28,
+    "word": "wooden",
+    "ipa": "/ˈwʊd.ən/",
+    "meaning": "làm bằng gỗ",
+    "unit": 3,
+    "definition": "Made from the hard material that comes from trees."
+  },
+  {
+    "no": 29,
+    "word": "spectacular",
+    "ipa": "/spekˈtæk.jə.lər/",
+    "meaning": "hùng vĩ",
+    "unit": 3,
+    "definition": "Very impressive and beautiful to look at."
+  },
+  {
+    "no": 30,
+    "word": "comfortable",
+    "ipa": "/ˈkʌm.fə.tə.bəl/",
+    "meaning": "thoải mái",
+    "unit": 3,
+    "definition": "Giving a feeling of physical relaxation and being at ease."
+  },
+  {
+    "no": 31,
+    "word": "relaxing",
+    "ipa": "/rɪˈlæk.sɪŋ/",
+    "meaning": "thư giãn",
+    "unit": 3,
+    "definition": "Making you feel calm and less stressed."
+  },
+  {
+    "no": 32,
+    "word": "modern",
+    "ipa": "/ˈmɒd.ən/",
+    "meaning": "hiện đại",
+    "unit": 3,
+    "definition": "Relating to the present time or recent styles and technology."
+  },
+  {
+    "no": 33,
+    "word": "grand",
+    "ipa": "/ɡrænd/",
+    "meaning": "đồ sộ",
+    "unit": 3,
+    "definition": "Large and impressive in size or appearance."
+  },
+  {
+    "no": 34,
+    "word": "tiny",
+    "ipa": "/ˈtaɪ.ni/",
+    "meaning": "nhỏ bé",
+    "unit": 3,
+    "definition": "Extremely small in size."
+  },
+  {
+    "no": 35,
+    "word": "colourful",
+    "ipa": "/ˈkʌl.ə.fəl/",
+    "meaning": "sặc sỡ",
+    "unit": 3,
+    "definition": "Having many bright and different shades."
+  },
+  {
+    "no": 36,
+    "word": "stone",
+    "ipa": "/stəʊn/",
+    "meaning": "đá",
+    "unit": 3,
+    "definition": "A hard solid material found in the ground used for building."
+  },
+  {
+    "no": 37,
+    "word": "mud",
+    "ipa": "/mʌd/",
+    "meaning": "bùn",
+    "unit": 3,
+    "definition": "Wet soft earth that sticks to things."
+  },
+  {
+    "no": 38,
+    "word": "tub",
+    "ipa": "/tʌb/",
+    "meaning": "bồn chứa nước",
+    "unit": 3,
+    "definition": "A wide open container used for holding liquids or for bathing."
+  },
+  {
+    "no": 39,
+    "word": "library",
+    "ipa": "/ˈlaɪ.brə.ri/",
+    "meaning": "thư viện",
+    "unit": 3,
+    "definition": "A building or room where books are kept for people to read or borrow."
+  },
+  {
+    "no": 40,
+    "word": "house",
+    "ipa": "/haʊs/",
+    "meaning": "ngôi nhà",
+    "unit": 3,
+    "definition": "A building where people live usually a family."
+  },
+  {
+    "no": 41,
+    "word": "hotel",
+    "ipa": "/həʊˈtel/",
+    "meaning": "khách sạn",
+    "unit": 3,
+    "definition": "A building where travelers pay to stay overnight in rooms."
+  },
+  {
+    "no": 42,
+    "word": "office",
+    "ipa": "/ˈɒf.ɪs/",
+    "meaning": "văn phòng",
+    "unit": 3,
+    "definition": "A room or building where people work at desks."
+  },
+  {
+    "no": 43,
+    "word": "music academy",
+    "ipa": "/ˈmjuː.zɪk əˈkæd.ə.mi/",
+    "meaning": "học viện âm nhạc",
+    "unit": 3,
+    "definition": "A school where students learn to play instruments and sing."
+  },
+  {
+    "no": 44,
+    "word": "museum",
+    "ipa": "/mjuˈzɪə̯m/",
+    "meaning": "bảo tàng",
+    "unit": 3,
+    "definition": "A building where historical or artistic objects are displayed."
+  },
+  {
+    "no": 45,
+    "word": "amusement park",
+    "ipa": "/əˈmjuːz.mənt pɑːk/",
+    "meaning": "công viên giải trí",
+    "unit": 3,
+    "definition": "A place with rides and games where people go to have fun."
+  },
+  {
+    "no": 46,
+    "word": "sports centre",
+    "ipa": "/spɔːts ˈsen.tər/",
+    "meaning": "trung tâm thể thao",
+    "unit": 3,
+    "definition": "A building with facilities for playing games and exercising."
+  },
+  {
+    "no": 47,
+    "word": "energy",
+    "ipa": "/ˈen.ə.dʒi/",
+    "meaning": "năng lượng",
+    "unit": 3,
+    "definition": "The power used to make machines work and provide heat and light."
+  },
+  {
+    "no": 1,
+    "word": "roast",
+    "ipa": "/rəʊst/",
+    "meaning": "nướng",
+    "unit": 4,
+    "definition": "To cook food in an oven or over a fire using dry heat."
+  },
+  {
+    "no": 2,
+    "word": "crush",
+    "ipa": "/krʌʃ/",
+    "meaning": "đập nhỏ",
+    "unit": 4,
+    "definition": "To press something hard so it breaks into smaller pieces."
+  },
+  {
+    "no": 3,
+    "word": "pods",
+    "ipa": "/pɒdz/",
+    "meaning": "quả cacao (chưa tách hạt)",
+    "unit": 4,
+    "definition": "The outer cases of cacao that contain seeds inside."
+  },
+  {
+    "no": 4,
+    "word": "containers",
+    "ipa": "/kənˈteɪ.nəz/",
+    "meaning": "hộp đựng",
+    "unit": 4,
+    "definition": "Objects like boxes or jars used to hold or store things."
+  },
+  {
+    "no": 5,
+    "word": "cacao paste",
+    "ipa": "/kəˈkɑː.əʊ peɪst/",
+    "meaning": "sốt cacao",
+    "unit": 4,
+    "definition": "A thick mixture made from ground beans used to make chocolate."
+  },
+  {
+    "no": 6,
+    "word": "cacao beans",
+    "ipa": "/kəˈkɑː.əʊ biːnz/",
+    "meaning": "hạt cacao",
+    "unit": 4,
+    "definition": "Seeds from a tropical tree used to make chocolate products."
+  },
+  {
+    "no": 7,
+    "word": "cocoa butter",
+    "ipa": "/ˈkəʊ.kəʊ ˈbʌt.ər/",
+    "meaning": "bơ cacao",
+    "unit": 4,
+    "definition": "A pale yellow fat extracted from seeds used in chocolate and cosmetics."
+  },
+  {
+    "no": 8,
+    "word": "tropical country",
+    "ipa": "/ˈtrɒp.ɪ.kəl ˈkʌn.tri/",
+    "meaning": "đất nước nhiệt đới",
+    "unit": 4,
+    "definition": "A nation located near the equator with hot and wet weather."
+  },
+  {
+    "no": 9,
+    "word": "equator",
+    "ipa": "/ɪˈkweɪ.tər/",
+    "meaning": "xích đạo",
+    "unit": 4,
+    "definition": "An imaginary line around the middle of Earth between north and south."
+  },
+  {
+    "no": 10,
+    "word": "harvest",
+    "ipa": "/ˈhɑː.vɪst/",
+    "meaning": "thu hoạch",
+    "unit": 4,
+    "definition": "To collect crops from the fields when they are ready."
+  },
+  {
+    "no": 11,
+    "word": "papaya",
+    "ipa": "/pəˈpɑː.jə/",
+    "meaning": "đu đủ",
+    "unit": 4,
+    "definition": "A large orange fruit with black seeds that grows in warm climates."
+  },
+  {
+    "no": 12,
+    "word": "nutritious",
+    "ipa": "/njuːˈtrɪʃ.əs/",
+    "meaning": "có dinh dưỡng",
+    "unit": 4,
+    "definition": "Containing substances that are good for your health and body."
+  },
+  {
+    "no": 13,
+    "word": "spiky",
+    "ipa": "/ˈspaɪ.ki/",
+    "meaning": "gai nhọn",
+    "unit": 4,
+    "definition": "Having many sharp points sticking out."
+  },
+  {
+    "no": 14,
+    "word": "smooth",
+    "ipa": "/smuːð/",
+    "meaning": "mịn mượt",
+    "unit": 4,
+    "definition": "Having an even surface without any bumps or rough areas."
+  },
+  {
+    "no": 15,
+    "word": "sweet",
+    "ipa": "/swiːt/",
+    "meaning": "ngọt",
+    "unit": 4,
+    "definition": "Having a taste like sugar or honey."
+  },
+  {
+    "no": 16,
+    "word": "salty",
+    "ipa": "/ˈsɔːl.ti/",
+    "meaning": "mặn",
+    "unit": 4,
+    "definition": "Having the taste of sea water or containing sodium."
+  },
+  {
+    "no": 17,
+    "word": "juicy",
+    "ipa": "/ˈdʒuː.si/",
+    "meaning": "mọng nước",
+    "unit": 4,
+    "definition": "Containing a lot of liquid and tasting fresh."
+  },
+  {
+    "no": 18,
+    "word": "smell like",
+    "ipa": "/smel laɪk/",
+    "meaning": "ngửi như là",
+    "unit": 4,
+    "definition": "To have a similar scent or odor as something else."
+  },
+  {
+    "no": 19,
+    "word": "taste like",
+    "ipa": "/teɪst laɪk/",
+    "meaning": "vị như là",
+    "unit": 4,
+    "definition": "To have a similar flavor as something else when you eat it."
+  },
+  {
+    "no": 20,
+    "word": "feel like",
+    "ipa": "/fiːl laɪk/",
+    "meaning": "cảm giác như là",
+    "unit": 4,
+    "definition": "To have a similar texture or sensation when touched."
+  },
+  {
+    "no": 21,
+    "word": "sound",
+    "ipa": "/saʊnd/",
+    "meaning": "nghe",
+    "unit": 4,
+    "definition": "Something that you hear with your ears."
+  },
+  {
+    "no": 22,
+    "word": "hold on tight",
+    "ipa": "/həʊld ɒn taɪt/",
+    "meaning": "giữ chặt",
+    "unit": 4,
+    "definition": "To grip something firmly so it does not fall or slip away."
+  },
+  {
+    "no": 23,
+    "word": "cotton wool",
+    "ipa": "/ˈkɒt.ən wʊl/",
+    "meaning": "bông gòn",
+    "unit": 4,
+    "definition": "Soft white fluffy material used for cleaning wounds."
+  },
+  {
+    "no": 24,
+    "word": "plastic bottle",
+    "ipa": "/ˈplæs.tɪk ˈbɒt.əl/",
+    "meaning": "chai nhựa",
+    "unit": 4,
+    "definition": "A container made from artificial material used to hold liquids."
+  },
+  {
+    "no": 25,
+    "word": "plastic container",
+    "ipa": "/ˈplæs.tɪk kənˈteɪ.nər/",
+    "meaning": "hộp đựng nhựa",
+    "unit": 4,
+    "definition": "A box or storage item made from artificial material."
+  },
+  {
+    "no": 26,
+    "word": "paper towel",
+    "ipa": "/ˈpeɪ.pə ˈtaʊ.əl/",
+    "meaning": "giấy lau tay",
+    "unit": 4,
+    "definition": "A disposable sheet used to wipe hands or clean surfaces."
+  },
+  {
+    "no": 27,
+    "word": "seeds",
+    "ipa": "/siːdz/",
+    "meaning": "hạt",
+    "unit": 4,
+    "definition": "Small parts of a plant that can grow into new plants."
+  },
+  {
+    "no": 28,
+    "word": "cress",
+    "ipa": "/kres/",
+    "meaning": "rau mầm",
+    "unit": 4,
+    "definition": "A small plant with tiny leaves often grown for salads."
+  },
+  {
+    "no": 29,
+    "word": "bok choy",
+    "ipa": "/bɒk ˈtʃɔɪ/",
+    "meaning": "cải thìa",
+    "unit": 4,
+    "definition": "A Chinese vegetable with white stems and green leaves."
+  },
+  {
+    "no": 30,
+    "word": "okra",
+    "ipa": "/ˈɒk.rə/",
+    "meaning": "đậu bắp",
+    "unit": 4,
+    "definition": "A green vegetable with a long shape used in cooking."
+  },
+  {
+    "no": 31,
+    "word": "soil",
+    "ipa": "/sɔɪl/",
+    "meaning": "đất",
+    "unit": 4,
+    "definition": "The top layer of earth where plants grow."
+  },
+  {
+    "no": 32,
+    "word": "ground",
+    "ipa": "/ɡraʊnd/",
+    "meaning": "mặt đất",
+    "unit": 4,
+    "definition": "The surface of the earth that you walk on."
+  },
+  {
+    "no": 33,
+    "word": "mango",
+    "ipa": "/ˈmæŋ.ɡəʊ/",
+    "meaning": "quả xoài",
+    "unit": 4,
+    "definition": "A sweet tropical fruit with yellow flesh and a large seed."
+  },
+  {
+    "no": 34,
+    "word": "clean",
+    "ipa": "/kliːn/",
+    "meaning": "sạch sẽ",
+    "unit": 4,
+    "definition": "Free from dirt or unwanted things."
+  },
+  {
+    "no": 35,
+    "word": "cut",
+    "ipa": "/kʌt/",
+    "meaning": "cắt",
+    "unit": 4,
+    "definition": "To divide something into pieces using a sharp tool."
+  },
+  {
+    "no": 36,
+    "word": "fold",
+    "ipa": "/fəʊld/",
+    "meaning": "gập",
+    "unit": 4,
+    "definition": "To bend something so one part covers another."
+  },
+  {
+    "no": 37,
+    "word": "press",
+    "ipa": "/pres/",
+    "meaning": "nhấn",
+    "unit": 4,
+    "definition": "To push firmly against something."
+  },
+  {
+    "no": 38,
+    "word": "rinse",
+    "ipa": "/rɪns/",
+    "meaning": "rửa dội",
+    "unit": 4,
+    "definition": "To wash something quickly with water to remove soap or dirt."
+  },
+  {
+    "no": 39,
+    "word": "grow",
+    "ipa": "/ɡrəʊ/",
+    "meaning": "trồng",
+    "unit": 4,
+    "definition": "To increase in size or to raise plants from seeds."
+  },
+  {
+    "no": 1,
+    "word": "title",
+    "ipa": "/ˈtaɪ.təl/",
+    "meaning": "tiêu đề",
+    "unit": 5,
+    "definition": "The name given to a book story or piece of work."
+  },
+  {
+    "no": 2,
+    "word": "characters",
+    "ipa": "/ˈkær.ɪk.təz/",
+    "meaning": "nhân vật",
+    "unit": 5,
+    "definition": "The people or animals in a story movie or play."
+  },
+  {
+    "no": 3,
+    "word": "setting",
+    "ipa": "/ˈset.ɪŋ/",
+    "meaning": "bối cảnh của câu chuyện",
+    "unit": 5,
+    "definition": "The time and place where a story happens."
+  },
+  {
+    "no": 4,
+    "word": "dilemma",
+    "ipa": "/dɪˈlem.ə/",
+    "meaning": "tình trạng khó xử",
+    "unit": 5,
+    "definition": "A difficult situation where you must choose between two options."
+  },
+  {
+    "no": 5,
+    "word": "solution",
+    "ipa": "/səˈluː.ʃən/",
+    "meaning": "giải pháp",
+    "unit": 5,
+    "definition": "An answer or way to fix a problem."
+  },
+  {
+    "no": 6,
+    "word": "brave",
+    "ipa": "/breɪv/",
+    "meaning": "can đảm",
+    "unit": 5,
+    "definition": "Not afraid of dangerous or difficult situations."
+  },
+  {
+    "no": 7,
+    "word": "intelligent",
+    "ipa": "/ɪnˈtel.ɪ.dʒənt/",
+    "meaning": "thông minh",
+    "unit": 5,
+    "definition": "Having the ability to learn and understand things quickly."
+  },
+  {
+    "no": 8,
+    "word": "powerful",
+    "ipa": "/ˈpaʊə.fəl/",
+    "meaning": "mạnh mẽ",
+    "unit": 5,
+    "definition": "Having great strength or influence."
+  },
+  {
+    "no": 9,
+    "word": "honest",
+    "ipa": "/ˈɒn.ɪst/",
+    "meaning": "trung thực",
+    "unit": 5,
+    "definition": "Always telling the truth and not cheating or lying."
+  },
+  {
+    "no": 10,
+    "word": "loyal",
+    "ipa": "/ˈlɔɪ.əl/",
+    "meaning": "trung thành",
+    "unit": 5,
+    "definition": "Faithful and supportive to friends family or country."
+  },
+  {
+    "no": 11,
+    "word": "athletic",
+    "ipa": "/æθˈlet.ɪk/",
+    "meaning": "khỏe mạnh năng động",
+    "unit": 5,
+    "definition": "Physically strong and good at playing games or running."
+  },
+  {
+    "no": 12,
+    "word": "create",
+    "ipa": "/kriˈeɪt/",
+    "meaning": "tạo nên / tạo ra",
+    "unit": 5,
+    "definition": "To make something new that did not exist before."
+  },
+  {
+    "no": 13,
+    "word": "describe",
+    "ipa": "/dɪˈskraɪb/",
+    "meaning": "miêu tả",
+    "unit": 5,
+    "definition": "To say or write what something or someone is like."
+  },
+  {
+    "no": 14,
+    "word": "press",
+    "ipa": "/pres/",
+    "meaning": "nhấn",
+    "unit": 5,
+    "definition": "To push firmly against something."
+  },
+  {
+    "no": 15,
+    "word": "detective",
+    "ipa": "/dɪˈtek.tɪv/",
+    "meaning": "thám tử",
+    "unit": 5,
+    "definition": "A person whose job is to investigate crimes and find information."
+  },
+  {
+    "no": 16,
+    "word": "stare",
+    "ipa": "/steər/",
+    "meaning": "nhìn chằm chằm",
+    "unit": 5,
+    "definition": "To look at something for a long time without looking away."
+  },
+  {
+    "no": 17,
+    "word": "skyscraper",
+    "ipa": "/ˈskaɪˌskreɪ.pər/",
+    "meaning": "tòa nhà chọc trời",
+    "unit": 5,
+    "definition": "A very tall building with many floors in a city."
+  },
+  {
+    "no": 18,
+    "word": "adventure",
+    "ipa": "/ədˈven.tʃər/",
+    "meaning": "cuộc phiêu lưu",
+    "unit": 5,
+    "definition": "An exciting experience involving new activities or some danger."
+  },
+  {
+    "no": 19,
+    "word": "experiment",
+    "ipa": "/ɪkˈsper.ɪ.mənt/",
+    "meaning": "cuộc thí nghiệm",
+    "unit": 5,
+    "definition": "A scientific test done to discover or prove something."
+  },
+  {
+    "no": 20,
+    "word": "jungle",
+    "ipa": "/ˈdʒʌŋ.ɡəl/",
+    "meaning": "rừng",
+    "unit": 5,
+    "definition": "A thick forest in hot countries with many trees and plants."
+  },
+  {
+    "no": 21,
+    "word": "draw",
+    "ipa": "/drɔː/",
+    "meaning": "vẽ",
+    "unit": 5,
+    "definition": "To make a picture using a pencil pen or crayon."
+  },
+  {
+    "no": 22,
+    "word": "rub out",
+    "ipa": "/rʌb aʊt/",
+    "meaning": "xóa",
+    "unit": 5,
+    "definition": "To remove writing or marks by moving an eraser across them."
+  },
+  {
+    "no": 23,
+    "word": "campsite",
+    "ipa": "/ˈkæmp.saɪt/",
+    "meaning": "khu cắm trại",
+    "unit": 5,
+    "definition": "A place where people set up tents to stay outdoors."
+  },
+  {
+    "no": 24,
+    "word": "black bear",
+    "ipa": "/blæk beər/",
+    "meaning": "con gấu đen",
+    "unit": 5,
+    "definition": "A large wild animal with dark fur that lives in forests."
+  },
+  {
+    "no": 25,
+    "word": "sniff",
+    "ipa": "/snɪf/",
+    "meaning": "hít ngửi / đánh hơi",
+    "unit": 5,
+    "definition": "To smell something by breathing in through your nose."
+  },
+  {
+    "no": 26,
+    "word": "bush",
+    "ipa": "/bʊʃ/",
+    "meaning": "bụi cây",
+    "unit": 5,
+    "definition": "A plant with many branches that grows close to the ground."
+  },
+  {
+    "no": 27,
+    "word": "hide",
+    "ipa": "/haɪd/",
+    "meaning": "trốn",
+    "unit": 5,
+    "definition": "To put yourself or something in a place where others cannot see."
+  },
+  {
+    "no": 28,
+    "word": "guideline",
+    "ipa": "/ˈɡaɪd.laɪn/",
+    "meaning": "hướng dẫn",
+    "unit": 5,
+    "definition": "Rules or instructions that tell you how to do something."
+  },
+  {
+    "no": 29,
+    "word": "danger",
+    "ipa": "/ˈdeɪn.dʒər/",
+    "meaning": "sự nguy hiểm",
+    "unit": 5,
+    "definition": "A situation where something bad might happen to you."
+  },
+  {
+    "no": 30,
+    "word": "trouble",
+    "ipa": "/ˈtrʌb.əl/",
+    "meaning": "sự rắc rối",
+    "unit": 5,
+    "definition": "Problems or difficulties that cause worry or pain."
+  }
+]

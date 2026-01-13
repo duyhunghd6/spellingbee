@@ -1,0 +1,266 @@
+.gameplay-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.gameplay-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.gameplay-header .back-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--color-text-muted);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 1.25rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.gameplay-header .back-btn:hover {
+  border-color: var(--color-error);
+  color: var(--color-error);
+}
+
+.gameplay-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.word-section {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.next-countdown {
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  animation: pulse 1s ease infinite;
+}
+
+.input-section {
+  width: 100%;
+  max-width: 600px;
+}
+
+.submit-btn {
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--color-success), var(--color-success-dark));
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Game Complete Screen */
+.game-complete-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.complete-content {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.complete-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.final-score {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.score-big {
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+}
+
+.score-percent {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.5rem;
+}
+
+.final-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.stat-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.complete-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.complete-buttons .btn-primary {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background: var(--color-primary);
+  color: white;
+  cursor: pointer;
+}
+
+.complete-buttons .btn-primary:hover {
+  background: var(--color-primary-dark);
+}
+
+@media (max-width: 600px) {
+  .gameplay-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gameplay-header .back-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .gameplay-main {
+    gap: 1.5rem;
+  }
+  
+  .score-big {
+    font-size: 3rem;
+  }
+}
+
+/* Secondary button */
+.complete-buttons .btn-secondary {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid var(--color-primary);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.complete-buttons .btn-secondary:hover {
+  background: var(--color-primary-light);
+}
+
+/* Review List */
+.review-list {
+  margin-top: 2rem;
+  text-align: left;
+  background: var(--color-bg-light);
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.review-list h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}
+
+.review-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.review-item.correct {
+  background: rgba(72, 187, 120, 0.15);
+}
+
+.review-item.incorrect {
+  background: rgba(245, 101, 101, 0.15);
+}
+
+.review-number {
+  font-weight: 600;
+  color: var(--color-text-muted);
+  min-width: 2rem;
+}
+
+.review-word {
+  font-weight: 600;
+  flex: 1;
+}
+
+.review-user-answer {
+  font-size: 0.85rem;
+  color: var(--color-error);
+  font-style: italic;
+}
+
+.review-status {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.review-item.correct .review-status {
+  color: var(--color-success);
+}
+
+.review-item.incorrect .review-status {
+  color: var(--color-error);
+}
