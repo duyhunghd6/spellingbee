@@ -43,6 +43,7 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [showingFeedback, setShowingFeedback] = useState(false);
   const [nextQuestionCountdown, setNextQuestionCountdown] = useState(0);
+  const [audioLoading, setAudioLoading] = useState(false);
   
   // Game complete state
   const [gameComplete, setGameComplete] = useState(false);
@@ -70,15 +71,18 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
     
   // Auto-play word pronunciation and handle missing audio
     if (currentWord) {
+      setAudioLoading(true);
       // Small delay to allow UI to settle
       const timer = setTimeout(async () => {
         try {
           await playWholeWord(currentWord.word);
+          setAudioLoading(false);
         } catch (err) {
           // Only skip if the file is genuinely missing (not a playback error)
           const errorMessage = err instanceof Error ? err.message : String(err);
           if (errorMessage.includes('Audio file not found')) {
             console.warn(`Audio missing for ${currentWord.word}, skipping...`);
+            setAudioLoading(false);
             // If audio is missing, wait briefly and skip to next question
             setTimeout(() => {
               moveToNextQuestion();
@@ -86,17 +90,21 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
           } else {
             // Just log playback errors but don't skip
             console.error(`Failed to play word audio:`, err);
+            setAudioLoading(false);
           }
         }
       }, 500);
       
-      return () => clearTimeout(timer);
+      return () => {
+        clearTimeout(timer);
+        setAudioLoading(false);
+      };
     }
   }, [currentIndex, currentWord, displayLength]);
 
-  // Timer countdown
+  // Timer countdown - only start after audio finishes loading
   useEffect(() => {
-    if (isSubmitted || gameComplete) return;
+    if (isSubmitted || gameComplete || audioLoading) return;
     
     timerRef.current = setInterval(() => {
       setTimeRemaining((prev: number) => {
@@ -112,7 +120,7 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [isSubmitted, gameComplete, currentIndex]);
+  }, [isSubmitted, gameComplete, currentIndex, audioLoading]);
 
   const endGame = useCallback(() => {
     setGameComplete(true);
@@ -290,6 +298,12 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
 
       <main className="gameplay-main">
         <div className="word-section">
+          {audioLoading && (
+            <div className="audio-loading">
+              🔊 Loading audio...
+            </div>
+          )}
+          
           {showingFeedback && nextQuestionCountdown > 0 && (
             <div className="next-countdown">
               Next word in {nextQuestionCountdown}s

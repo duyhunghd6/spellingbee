@@ -55,6 +55,14 @@
   animation: pulse 1s ease infinite;
 }
 
+.audio-loading {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  animation: pulse 1s ease infinite;
+}
+
 .input-section {
   width: 100%;
   max-width: 600px;
