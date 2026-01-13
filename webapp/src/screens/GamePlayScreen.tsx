@@ -26,7 +26,11 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
   onComplete,
   onBack,
 }) => {
-  const maxWordLength = getMaxWordLength(words);
+  // Filter words to only include those with audio files
+  const [filteredWords, setFilteredWords] = useState<Word[]>([]);
+  const [isFilteringWords, setIsFilteringWords] = useState(true);
+  
+  const maxWordLength = getMaxWordLength(filteredWords.length > 0 ? filteredWords : words);
   
   // Game state
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,7 +60,32 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const feedbackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   
-  const currentWord = words[currentIndex];
+  // Filter words on mount to only include those with audio
+  useEffect(() => {
+    const filterWordsWithAudio = async () => {
+      setIsFilteringWords(true);
+      const wordsWithAudio: Word[] = [];
+      
+      for (const word of words) {
+        const paths = { wholeWord: `/audio/${word.word.toLowerCase().replace(/\s+/g, '_').replace(/\./g, '').replace(/-/g, '_').replace(/[^a-z0-9_]/g, '')}_1_whole_word.wav` };
+        try {
+          const response = await fetch(paths.wholeWord, { method: 'HEAD' });
+          if (response.ok) {
+            wordsWithAudio.push(word);
+          }
+        } catch {
+          // Skip words without audio
+        }
+      }
+      
+      setFilteredWords(wordsWithAudio);
+      setIsFilteringWords(false);
+    };
+    
+    filterWordsWithAudio();
+  }, [words]);
+  
+  const currentWord = filteredWords[currentIndex];
   const displayLength = difficulty === 'easy' ? currentWord.word.length : maxWordLength;
 
   // Initialize answer array when word changes
@@ -228,6 +257,33 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
       stopAudio();
     };
   }, []);
+
+  // Show loading while filtering words
+  if (isFilteringWords) {
+    return (
+      <div className="game-complete-screen">
+        <div className="complete-content">
+          <h1>🔊 Checking Audio Files...</h1>
+          <p>Please wait while we verify available questions.</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Show error if no words with audio
+  if (filteredWords.length === 0) {
+    return (
+      <div className="game-complete-screen">
+        <div className="complete-content">
+          <h1>⚠️ No Audio Available</h1>
+          <p>No words with audio files were found.</p>
+          <button className="btn-primary" onClick={onBack}>
+            Go Back
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   if (gameComplete && !showNameModal) {
     return (
