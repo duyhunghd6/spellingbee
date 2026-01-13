@@ -36,7 +36,7 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
   const [questionStartTime, setQuestionStartTime] = useState(Date.now());
   
   // Timer state
-  const [timeRemaining, setTimeRemaining] = useState(GAME_CONSTANTS.MAX_TIME_PER_QUESTION);
+  const [timeRemaining, setTimeRemaining] = useState<number>(GAME_CONSTANTS.MAX_TIME_PER_QUESTION);
   
   // Feedback state
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -52,8 +52,8 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
   // Answer history for review
   const [answerHistory, setAnswerHistory] = useState<{word: string; userAnswer: string; correct: boolean}[]>([]);
   
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
-  const feedbackTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const feedbackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   
   const currentWord = words[currentIndex];
   const displayLength = difficulty === 'easy' ? currentWord.word.length : maxWordLength;
@@ -92,7 +92,7 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
     if (isSubmitted || gameComplete) return;
     
     timerRef.current = setInterval(() => {
-      setTimeRemaining((prev) => {
+      setTimeRemaining((prev: number) => {
         if (prev <= 1) {
           // Time's up - auto submit
           handleSubmit();
