@@ -140,9 +140,12 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
     
     stopAudio();
     
+    const normalize = (str: string) => str.toLowerCase().replace(/[\s-]/g, '');
     const userWord = userAnswer.join('').toLowerCase().trim();
     const correctWord = currentWord.word.toLowerCase();
-    const correct = userWord === correctWord;
+    
+    // Compare normalized versions (ignoring spaces and hyphens)
+    const correct = normalize(userWord) === normalize(correctWord);
     
     setIsSubmitted(true);
     setIsCorrect(correct);
