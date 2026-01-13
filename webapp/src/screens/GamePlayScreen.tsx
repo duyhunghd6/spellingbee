@@ -75,11 +75,18 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
         try {
           await playWholeWord(currentWord.word);
         } catch (err) {
-          console.warn(`Audio missing for ${currentWord.word}, skipping...`);
-          // If audio is missing, wait briefly and skip to next question
-          setTimeout(() => {
-            moveToNextQuestion();
-          }, 1500);
+          // Only skip if the file is genuinely missing (not a playback error)
+          const errorMessage = err instanceof Error ? err.message : String(err);
+          if (errorMessage.includes('Audio file not found')) {
+            console.warn(`Audio missing for ${currentWord.word}, skipping...`);
+            // If audio is missing, wait briefly and skip to next question
+            setTimeout(() => {
+              moveToNextQuestion();
+            }, 1500);
+          } else {
+            // Just log playback errors but don't skip
+            console.error(`Failed to play word audio:`, err);
+          }
         }
       }, 500);
       
