@@ -355,9 +355,9 @@ async function callTTSApi(prompt: string): Promise<Buffer> {
             sampleRate = parseInt(rateMatch[1], 10);
           }
 
-          // Convert PCM to WAV format
+          // Convert PCM to MP3 format
           if (mimeType.includes('L16') || mimeType.includes('pcm')) {
-            audioBuffer = pcmToWav(audioBuffer, sampleRate);
+            audioBuffer = pcmToMp3(audioBuffer, sampleRate);
           }
 
           resolve(audioBuffer);
