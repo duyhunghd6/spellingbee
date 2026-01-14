@@ -8,6 +8,7 @@ import { ScoreDisplay } from '../components/ScoreDisplay';
 import { PlayerNameModal } from '../components/PlayerNameModal';
 import { playWholeWord } from '../services/audioService';
 import { recordMistake, recordCorrect, getMaxWordLength } from '../services/wordService';
+import { markQuestionShown, markQuestionCorrect, markQuestionIncorrect } from '../services/questionSessionService';
 import { getPlayerSession, saveGameResult, updatePlayerName } from '../services/storageService';
 import './GamePlayScreen.css';
 
@@ -50,13 +51,22 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
   const [showNameModal, setShowNameModal] = useState(false);
   const [showReview, setShowReview] = useState(false);
   
+  // Removed retry state - now only using review round at the end
+  
+  // Review round state
+  const [isReviewRound, setIsReviewRound] = useState(false);
+  const [wrongWords, setWrongWords] = useState<Word[]>([]);
+  const [reviewScore, setReviewScore] = useState(0);
+  
   // Answer history for review
   const [answerHistory, setAnswerHistory] = useState<{word: string; userAnswer: string; correct: boolean}[]>([]);
   
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const feedbackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   
-  const currentWord = words[currentIndex];
+  // Use wrongWords array during review round, otherwise use main words array
+  const activeWords = isReviewRound ? wrongWords : words;
+  const currentWord = activeWords[currentIndex];
   const displayLength = difficulty === 'easy' ? (currentWord?.word.length || 0) : maxWordLength;
 
   // Initialize answer array when word changes
@@ -71,6 +81,9 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
     
   // Auto-play word pronunciation and handle missing audio
     if (currentWord) {
+      // Mark question as shown for session tracking
+      markQuestionShown(currentWord);
+      
       setAudioLoading(true);
       // Small delay to allow UI to settle
       const timer = setTimeout(async () => {
@@ -104,13 +117,20 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
 
   // Timer countdown - only start after audio finishes loading
   useEffect(() => {
-    if (isSubmitted || gameComplete || audioLoading) return;
+    if (isSubmitted || gameComplete || audioLoading) {
+      // Clear any existing timer when these states change
+      if (timerRef.current) clearInterval(timerRef.current);
+      return;
+    }
     
     timerRef.current = setInterval(() => {
       setTimeRemaining((prev: number) => {
         if (prev <= 1) {
-          // Time's up - auto submit
-          handleSubmit();
+          // Time's up - trigger submit on next tick
+          requestAnimationFrame(() => {
+            const submitBtn = document.querySelector('.submit-btn') as HTMLButtonElement;
+            submitBtn?.click();
+          });
           return 0;
         }
         return prev - 1;
@@ -125,6 +145,9 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
   const endGame = useCallback(() => {
     setGameComplete(true);
     
+    // Calculate final score including review round if applicable
+    const finalScore = isReviewRound ? score + reviewScore : score + (isCorrect ? 1 : 0);
+    
     // Check if player has a name
     const session = getPlayerSession();
     if (!session?.name) {
@@ -134,24 +157,45 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
       saveGameResult(
         session.name,
         difficulty,
-        score + (isCorrect ? 1 : 0), // Include current question if correct
+        finalScore,
         totalQuestions,
         Math.round(totalTimeSpent)
       );
     }
-  }, [difficulty, score, isCorrect, totalQuestions, totalTimeSpent]);
+  }, [difficulty, score, reviewScore, isCorrect, totalQuestions, totalTimeSpent, isReviewRound]);
 
   const moveToNextQuestion = useCallback(() => {
-    if (currentIndex >= totalQuestions - 1) {
-      // Game complete
-      endGame();
+    if (isReviewRound) {
+      // In review round, check if we've reviewed all wrong words
+      if (currentIndex >= wrongWords.length - 1) {
+        endGame();
+      } else {
+        setCurrentIndex((prev) => prev + 1);
+      }
     } else {
-      setCurrentIndex((prev) => prev + 1);
+      // In main session, check if completed all questions
+      if (currentIndex >= totalQuestions - 1) {
+        // Check if there are wrong words to review
+        if (wrongWords.length > 0) {
+          startReviewRound();
+        } else {
+          endGame();
+        }
+      } else {
+        setCurrentIndex((prev) => prev + 1);
+      }
     }
-  }, [currentIndex, totalQuestions, endGame]);
+  }, [currentIndex, totalQuestions, wrongWords, isReviewRound, endGame]);
 
   const handleSubmit = useCallback(() => {
-    if (isSubmitted) return;
+    // Safety check - prevent error if currentWord is undefined
+    if (!currentWord) {
+      console.error('handleSubmit called with undefined currentWord');
+      return;
+    }
+    
+    // Only allow one submission per question
+    if (isSubmitted && timeRemaining > 0) return;
     
     stopAudio();
     
@@ -172,10 +216,21 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
     
     // Update score and word weights
     if (correct) {
-      setScore((prev) => prev + 1);
+      if (isReviewRound) {
+        setReviewScore((prev) => prev + 1);
+      } else {
+        setScore((prev) => prev + 1);
+      }
       recordCorrect(currentWord);
+      markQuestionCorrect(currentWord); // Track in session
     } else {
       recordMistake(currentWord);
+      markQuestionIncorrect(currentWord); // Track in session
+      
+      // Add to wrong words list for review round (only in main session, not during review)
+      if (!isReviewRound) {
+        setWrongWords((prev) => [...prev, currentWord]);
+      }
     }
     
     // Track answer for review
@@ -202,7 +257,7 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
         moveToNextQuestion();
       }
     }, 1000);
-  }, [isSubmitted, userAnswer, currentWord, questionStartTime, difficulty, moveToNextQuestion]);
+  }, [isSubmitted, userAnswer, currentWord, questionStartTime, difficulty, isReviewRound, moveToNextQuestion]);
 
   const handleNameSubmit = (name: string) => {
     updatePlayerName(name);
@@ -218,6 +273,20 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
 
   const handleSkipName = () => {
     setShowNameModal(false);
+  };
+
+
+
+  const startReviewRound = () => {
+    // Transition to review round
+    setIsReviewRound(true);
+    setCurrentIndex(0); // Reset to first question (but now using wrongWords array)
+    setReviewScore(0);
+    
+    // Reset feedback state for new round
+    setIsSubmitted(false);
+    setIsCorrect(null);
+    setShowingFeedback(false);
   };
 
   // Cleanup timers on unmount
@@ -282,11 +351,17 @@ export const GamePlayScreen: React.FC<GamePlayScreenProps> = ({
 
   return (
     <div className="gameplay-screen">
+      {isReviewRound && (
+        <div className="review-round-banner">
+          🔄 Review Round - Practice wrong answers ({currentIndex + 1}/{wrongWords.length})
+        </div>
+      )}
+      
       <header className="gameplay-header">
         <button className="back-btn" onClick={onBack}>✕</button>
         <ScoreDisplay
-          score={score}
-          totalQuestions={totalQuestions}
+          score={isReviewRound ? reviewScore : score}
+          totalQuestions={isReviewRound ? wrongWords.length : totalQuestions}
           currentQuestion={currentIndex + 1}
           totalTime={totalTimeSpent}
         />

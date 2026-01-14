@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import type { Word, Difficulty } from './types';
-import { loadWords, selectWordsWeighted } from './services/wordService';
+import { loadWords } from './services/wordService';
+import { selectQuestionsForSession } from './services/questionSessionService';
 import { HomeScreen } from './screens/HomeScreen';
 import { GameSetupScreen } from './screens/GameSetupScreen';
 import { GamePlayScreen } from './screens/GamePlayScreen';
+import { LeaderboardScreen } from './screens/LeaderboardScreen';
 import './App.css';
 
 type Screen = 'home' | 'setup' | 'game' | 'leaderboard';
@@ -42,9 +44,9 @@ function App() {
     setDifficulty(diff);
     setTotalQuestions(count);
     
-    // Select words using weighted random algorithm
+    // Select words using session-based smart rotation algorithm
     const actualCount = Math.min(count, allWords.length);
-    const selected = selectWordsWeighted(allWords, actualCount);
+    const selected = selectQuestionsForSession(allWords, actualCount);
     setGameWords(selected);
     
     setScreen('game');
@@ -79,7 +81,10 @@ function App() {
   return (
     <div className="app">
       {screen === 'home' && (
-        <HomeScreen onSelectGame={handleSelectGame} />
+        <HomeScreen
+          onSelectGame={handleSelectGame}
+          onViewLeaderboard={() => setScreen('leaderboard')}
+        />
       )}
       
       {screen === 'setup' && (
@@ -97,6 +102,10 @@ function App() {
           onComplete={handleGameComplete}
           onBack={handleBack}
         />
+      )}
+
+      {screen === 'leaderboard' && (
+        <LeaderboardScreen onBack={() => setScreen('home')} />
       )}
     </div>
   );

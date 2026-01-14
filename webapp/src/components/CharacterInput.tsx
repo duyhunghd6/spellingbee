@@ -94,9 +94,9 @@ export const CharacterInput: React.FC<CharacterInputProps> = ({
     if (disabled) return;
 
     const rawChar = e.target.value.slice(-1);
-    // Allow letters, hyphen, and space
+    // Allow letters, hyphen, space, and period
     const char = /^[a-zA-Z]$/.test(rawChar) ? rawChar.toUpperCase() : rawChar;
-    if (!/^[A-Z\- ]$/.test(char) && char !== '') return;
+    if (!/^[A-Z\- .]$/.test(char) && char !== '') return;
 
     const newValue = [...value];
     newValue[index] = char;

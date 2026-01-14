@@ -5,6 +5,18 @@
   padding: 1rem;
 }
 
+.review-round-banner {
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: white;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
 .gameplay-header {
   display: flex;
   align-items: center;
@@ -84,6 +96,61 @@
 .submit-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Retry Section (Easy Mode) */
+.retry-section {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(245, 101, 101, 0.1), rgba(245, 158, 11, 0.1));
+  border-radius: 16px;
+  border: 2px solid var(--color-error);
+  margin-top: 1rem;
+}
+
+.retry-message {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.retry-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-retry,
+.btn-skip-retry {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-retry {
+  background: linear-gradient(135deg, var(--color-warning), var(--color-warning-dark));
+  color: white;
+}
+
+.btn-retry:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(245, 158, 11, 0.3);
+}
+
+.btn-skip-retry {
+  background: transparent;
+  border: 2px solid var(--color-text-muted);
+  color: var(--color-text);
+}
+
+.btn-skip-retry:hover {
+  background: var(--color-bg-light);
+  border-color: var(--color-text);
 }
 
 /* Game Complete Screen */

@@ -41,6 +41,23 @@ export interface WordWeight {
   lastSeen: string | null;
 }
 
+// Question session tracking
+export interface QuestionHistory {
+  wordId: string;
+  timesShown: number;
+  timesCorrect: number;
+  timesIncorrect: number;
+  lastShownAt: string | null;
+}
+
+// Session stats
+export interface SessionStats {
+  totalQuestions: number;
+  unseenCount: number;
+  seenCount: number;
+  masteredCount: number; // correct more than wrong
+}
+
 // Game result for rankings
 export interface GameResult {
   id: string;
@@ -58,6 +75,7 @@ export const STORAGE_KEYS = {
   PLAYER_SESSION: 'spellingbee_player',
   WORD_WEIGHTS: 'spellingbee_weights',
   RANKINGS: 'spellingbee_rankings',
+  QUESTION_HISTORY: 'spellingbee_question_history',
 } as const;
 
 // Game constants

@@ -1,0 +1,283 @@
+.leaderboard-screen {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.leaderboard-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.leaderboard-header .back-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-text-muted);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.leaderboard-header .back-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.leaderboard-header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.leaderboard-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Player Greeting */
+.player-greeting {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.player-greeting h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.btn-edit-name {
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.btn-edit-name:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Edit Name Section */
+.edit-name-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.name-input {
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-text);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.name-input:focus {
+  outline: none;
+  background: white;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn-save,
+.btn-cancel {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-save {
+  background: white;
+  color: var(--color-success);
+}
+
+.btn-save:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.btn-cancel {
+  background: transparent;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.filter-tab {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--color-bg-light);
+  border-radius: 12px;
+  background: var(--color-bg-light);
+  color: var(--color-text);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.filter-tab:hover {
+  border-color: var(--color-primary-light);
+}
+
+.filter-tab.active {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border-color: var(--color-primary);
+  color: white;
+}
+
+/* History List */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.history-item {
+  background: var(--color-bg-light);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.history-item:hover {
+  border-color: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.player-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.difficulty-badge {
+  font-size: 1.5rem;
+}
+
+.score-display {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.score-percent {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  opacity: 0.7;
+}
+
+.score-excellent {
+  color: var(--color-success);
+}
+
+.score-good {
+  color: var(--color-warning);
+}
+
+.score-normal {
+  color: var(--color-text);
+}
+
+.game-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  flex-wrap: wrap;
+}
+
+.time-spent,
+.play-timestamp {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.empty-state p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.empty-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .leaderboard-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .filter-tabs {
+    justify-content: flex-start;
+  }
+
+  .filter-tab {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .history-item {
+    padding: 1rem;
+  }
+
+  .player-name {
+    font-size: 1.1rem;
+  }
+
+  .score-display {
+    font-size: 1.3rem;
+  }
+
+  .game-meta {
+    font-size: 0.85rem;
+  }
+}
